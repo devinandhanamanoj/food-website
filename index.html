@@ -61,32 +61,6 @@
         </div>
     </section>
 
-    <!-- ========== STATS STRIP ========== -->
-    <section id="stats-strip">
-        <div class="stats-container">
-            <div class="stat-box">
-                <i class="fa-solid fa-motorcycle"></i>
-                <h3>30 min</h3>
-                <p>Average Delivery</p>
-            </div>
-            <div class="stat-box">
-                <i class="fa-solid fa-store"></i>
-                <h3>500+</h3>
-                <p>Partner Restaurants</p>
-            </div>
-            <div class="stat-box">
-                <i class="fa-solid fa-face-smile"></i>
-                <h3>50,000+</h3>
-                <p>Happy Foodies</p>
-            </div>
-            <div class="stat-box">
-                <i class="fa-solid fa-map-location-dot"></i>
-                <h3>120+</h3>
-                <p>Cities Covered</p>
-            </div>
-        </div>
-    </section>
-
     <!-- ========== FEATURED DISHES ========== -->
     <section id="feature">
         <div class="feature-header">
@@ -705,12 +679,6 @@
             gsap.from(".hero-content p", { opacity: 0, y: 30, duration: 0.9, delay: 0.75, ease: "power3.out" });
             gsap.from(".hero-buttons button", { opacity: 0, y: 20, duration: 0.7, delay: 0.95, stagger: 0.15, ease: "back.out(1.2)" });
             gsap.from(".hero-stats .stat", { opacity: 0, y: 20, duration: 0.6, delay: 1.15, stagger: 0.12, ease: "power2.out" });
-
-            /* ---------- Stats strip ---------- */
-            gsap.from(".stat-box", {
-                scrollTrigger: { trigger: "#stats-strip", start: "top 85%" },
-                opacity: 0, y: 40, duration: 0.7, stagger: 0.15, ease: "back.out(1)"
-            });
 
             /* ---------- Section titles ---------- */
             gsap.utils.toArray('.section-title').forEach(title => {
