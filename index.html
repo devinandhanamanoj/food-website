@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRAVE CART · Where Every Craving Finds Its Way</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/2927/2927347.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header>
+        <div class="header-content">
+            <i class="fa-solid fa-burger fa-7x header-burger"></i>
+            <div class="header-text">
+                <h1>CRAVE CART</h1>
+                <h3>— Where Every Craving Finds Its Way</h3>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== NAVBAR ========== -->
+    <section id="navbar">
+        <nav>
+            <ul type="none">
+                <li><a href="#feature">MENU</a></li>
+                <li><a href="#specials">SPECIALS</a></li>
+                <li><a href="#how">HOW IT WORKS</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#testimonials">REVIEWS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+            <button>Login</button>
+        </nav>
+    </section>
+
+    <!-- ========== BANNER ========== -->
+    <section id="banner">
+        <video autoplay loop muted playsinline>
+            <source src="./7613407-hd_1920_1080_24fps.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <span class="hero-tag"><i class="fa-solid fa-bolt"></i> Delivering in 30 minutes or less</span>
+                <h1>Hungry? <span>We've got you.</span></h1>
+                <p>From sizzling street food to fine dining — order from 500+ restaurants near you, delivered hot & fresh.</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary"><i class="fa-solid fa-utensils"></i> Order Now</button>
+                    <button class="btn-secondary"><i class="fa-solid fa-circle-play"></i> Watch How It Works</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat"><strong>500+</strong><span>Restaurants</span></div>
+                    <div class="stat"><strong>50K+</strong><span>Happy Customers</span></div>
+                    <div class="stat"><strong>4.8★</strong><span>Avg Rating</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== STATS STRIP ========== -->
+    <section id="stats-strip">
+        <div class="stats-container">
+            <div class="stat-box">
+                <i class="fa-solid fa-motorcycle"></i>
+                <h3>30 min</h3>
+                <p>Average Delivery</p>
+            </div>
+            <div class="stat-box">
+                <i class="fa-solid fa-store"></i>
+                <h3>500+</h3>
+                <p>Partner Restaurants</p>
+            </div>
+            <div class="stat-box">
+                <i class="fa-solid fa-face-smile"></i>
+                <h3>50,000+</h3>
+                <p>Happy Foodies</p>
+            </div>
+            <div class="stat-box">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <h3>120+</h3>
+                <p>Cities Covered</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FEATURED DISHES ========== -->
+    <section id="feature">
+        <div class="feature-header">
+            <span class="feature-eyebrow">Chef's Picks</span>
+            <h2 class="section-title">
+                <i class="fa-regular fa-star" style="color:var(--red-accent); margin-right: 12px;"></i>
+                Featured Dishes
+            </h2>
+            <p class="feature-sub">Handpicked favourites our customers can't stop ordering</p>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <span class="badge badge-hot"><i class="fa-solid fa-fire"></i> Hot</span>
+                <div class="col-img-wrap">
+                    <img src="https://homefoodie.com.ph/uploads/2024/CLASSIC%20BURGER.jpg" alt="Classic Burger">
+                    <div class="img-overlay"><span class="quick-view"><i class="fa-solid fa-eye"></i> Quick View</span></div>
+                </div>
+                <div class="col-body">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        <span>4.7 (210)</span>
+                    </div>
+                    <h2>Classic Burger</h2>
+                    <p class="col-desc">Juicy beef patty, cheddar, fresh lettuce & secret sauce</p>
+                    <div class="col-footer">
+                        <span class="price">₹250</span>
+                        <button><i class="fa-solid fa-plus"></i> Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <span class="badge badge-popular"><i class="fa-solid fa-crown"></i> Popular</span>
+                <div class="col-img-wrap">
+                    <img src="https://bellyfull.net/wp-content/uploads/2026/02/Margherita-Pizza-hero.jpg" alt="Margherita Pizza">
+                    <div class="img-overlay"><span class="quick-view"><i class="fa-solid fa-eye"></i> Quick View</span></div>
+                </div>
+                <div class="col-body">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <span>4.9 (342)</span>
+                    </div>
+                    <h2>Margherita Pizza</h2>
+                    <p class="col-desc">Wood-fired crust, San Marzano tomatoes & fresh basil</p>
+                    <div class="col-footer">
+                        <span class="price">₹300</span>
+                        <button><i class="fa-solid fa-plus"></i> Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <span class="badge badge-new"><i class="fa-solid fa-leaf"></i> New</span>
+                <div class="col-img-wrap">
+                    <img src="https://tastythriftytimely.com/wp-content/uploads/2024/08/Vegan-Pesto-Pasta-with-Smoked-Tofu-FEATURED.jpg" alt="Pesto Pasta">
+                    <div class="img-overlay"><span class="quick-view"><i class="fa-solid fa-eye"></i> Quick View</span></div>
+                </div>
+                <div class="col-body">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <span>4.5 (128)</span>
+                    </div>
+                    <h2>Pesto Pasta</h2>
+                    <p class="col-desc">Basil pesto, smoked tofu & toasted pine nuts</p>
+                    <div class="col-footer">
+                        <span class="price">₹400</span>
+                        <button><i class="fa-solid fa-plus"></i> Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <span class="badge badge-cool"><i class="fa-solid fa-snowflake"></i> Refreshing</span>
+                <div class="col-img-wrap">
+                    <img src="https://evergreenkitchen.ca/wp-content/uploads/2024/03/Blueberry-Raspberry-Smoothie-Evergreen-Kitchen-1.jpg" alt="Berry Smoothie">
+                    <div class="img-overlay"><span class="quick-view"><i class="fa-solid fa-eye"></i> Quick View</span></div>
+                </div>
+                <div class="col-body">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <span>4.4 (96)</span>
+                    </div>
+                    <h2>Berry Smoothie</h2>
+                    <p class="col-desc">Blueberry, raspberry & banana blended with yogurt</p>
+                    <div class="col-footer">
+                        <span class="price">₹150</span>
+                        <button><i class="fa-solid fa-plus"></i> Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CHEF'S SPECIALS ========== -->
+    <section id="specials">
+        <div class="specials-header">
+            <span class="feature-eyebrow">Limited Time</span>
+            <h2 class="section-title">Chef's Specials</h2>
+            <p class="feature-sub">Exclusive dishes crafted by our top chefs — available this week only</p>
+        </div>
+
+        <div class="specials-grid">
+            <div class="special-card big">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&h=600&fit=crop" alt="Truffle Risotto">
+                <div class="special-content">
+                    <span class="special-tag"><i class="fa-solid fa-fire"></i> Chef's Signature</span>
+                    <h3>Black Truffle Risotto</h3>
+                    <p>Creamy arborio rice with shaved black truffle, aged parmesan & fresh herbs</p>
+                    <div class="special-meta">
+                        <span class="special-price">₹899</span>
+                        <button>Order Now <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="special-card">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&h=500&fit=crop" alt="Wood-fired Pizza">
+                <div class="special-content">
+                    <span class="special-tag"><i class="fa-solid fa-leaf"></i> Vegetarian</span>
+                    <h3>Truffle Mushroom Pizza</h3>
+                    <p>Wild mushrooms, truffle oil & mozzarella</p>
+                    <div class="special-meta">
+                        <span class="special-price">₹549</span>
+                        <button>Order <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="special-card">
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=500&fit=crop" alt="Buddha Bowl">
+                <div class="special-content">
+                    <span class="special-tag"><i class="fa-solid fa-heart"></i> Healthy</span>
+                    <h3>Rainbow Buddha Bowl</h3>
+                    <p>Quinoa, avocado, chickpeas & tahini dressing</p>
+                    <div class="special-meta">
+                        <span class="special-price">₹429</span>
+                        <button>Order <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== HOW IT WORKS  ========== -->
+    <section id="how">
+        <div class="how-header">
+            <span class="feature-eyebrow">Simple & Fast</span>
+            <h2 class="section-title">How It Works</h2>
+            <p class="feature-sub">Get your favourite food in 3 easy steps</p>
+        </div>
+
+        <div class="how-timeline">
+            <!-- progress line behind steps -->
+            <div class="timeline-line">
+                <div class="timeline-progress"></div>
+            </div>
+
+            <!-- Step 1 -->
+            <div class="how-card">
+                <div class="card-glow"></div>
+                <div class="card-inner">
+                    <div class="step-bubble">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <span class="step-num">01</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Browse & Choose</h3>
+                        <p>Explore 500+ restaurants and pick your favourite dishes from curated menus.</p>
+                        <div class="step-tag"><i class="fa-solid fa-check"></i> 500+ options</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="how-card">
+                <div class="card-glow"></div>
+                <div class="card-inner">
+                    <div class="step-bubble">
+                        <i class="fa-solid fa-credit-card"></i>
+                        <span class="step-num">02</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Place Your Order</h3>
+                        <p>Secure checkout with multiple payment options. Track your order in real-time.</p>
+                        <div class="step-tag"><i class="fa-solid fa-check"></i> 100% secure</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="how-card">
+                <div class="card-glow"></div>
+                <div class="card-inner">
+                    <div class="step-bubble">
+                        <i class="fa-solid fa-bell-concierge"></i>
+                        <span class="step-num">03</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Enjoy Your Meal</h3>
+                        <p>Hot, fresh food delivered to your doorstep in 30 minutes or less.</p>
+                        <div class="step-tag"><i class="fa-solid fa-check"></i> 30-min delivery</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MENU SECTION ========== -->
+    <section id="menu">
+        <h2 class="section-title">Our Full Menu</h2>
+
+        <div class="menu-category">
+            <h3><i class="fa-solid fa-seedling"></i> Starters</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://therecipecritic.com/wp-content/uploads/2023/02/loaded-fries-4.jpg" alt="Fries">
+                    <div class="menu-item-info">
+                        <h4>Loaded Fries</h4>
+                        <p>Crispy fries with cheese & herbs</p>
+                        <span class="item-price">₹189</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS9uzgHDtRT9P2VoioLiieYwBEaBA24Rq6vHOQxGyxmacZQvUb_t_Ff_8E&s=10" alt="Wings">
+                    <div class="menu-item-info">
+                        <h4>Spicy Wings</h4>
+                        <p>Buffalo style with blue cheese</p>
+                        <span class="item-price">₹280</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1541529086526-db283c563270?w=200&h=200&fit=crop" alt="Bruschetta">
+                    <div class="menu-item-info">
+                        <h4>Tomato Bruschetta</h4>
+                        <p>Toasted bread, tomato & basil</p>
+                        <span class="item-price">₹210</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=200&h=200&fit=crop" alt="Nachos">
+                    <div class="menu-item-info">
+                        <h4>Loaded Nachos</h4>
+                        <p>Cheesy nachos with salsa & guacamole</p>
+                        <span class="item-price">₹240</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3><i class="fa-solid fa-utensils"></i> Main Course</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ692jznH_3l6vggaDBlJ8N9roInf32PQzcDkuSIe5a1SWmFCFtvGxhIV-6&s=10" alt="Steak">
+                    <div class="menu-item-info">
+                        <h4>Grilled Steak</h4>
+                        <p>Angus beef with roasted veg</p>
+                        <span class="item-price">₹650</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH73qfOFN85_ZG0R4JueLlVTfrBOQ5k-WSVJT6wqxC_RHEq4cA3zhuuOCn&s=10" alt="Salmon">
+                    <div class="menu-item-info">
+                        <h4>Lemon Salmon</h4>
+                        <p>Pan-seared with dill sauce</p>
+                        <span class="item-price">₹750</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=200&h=200&fit=crop" alt="Ramen">
+                    <div class="menu-item-info">
+                        <h4>Tonkotsu Ramen</h4>
+                        <p>Rich pork broth, noodles & egg</p>
+                        <span class="item-price">₹520</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?w=200&h=200&fit=crop" alt="Butter Chicken">
+                    <div class="menu-item-info">
+                        <h4>Butter Chicken</h4>
+                        <p>Creamy tomato curry with naan</p>
+                        <span class="item-price">₹480</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3><i class="fa-solid fa-cake-candles"></i> Desserts</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbMJm3Hm_rfuY4qy46L8boivF-28w2vCq_-HzCtWB-Mb0wSEfHR_gtiQ0&s=10" alt="Brownie">
+                    <div class="menu-item-info">
+                        <h4>Choco Brownie</h4>
+                        <p>Warm with vanilla ice cream</p>
+                        <span class="item-price">₹220</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://abajillianrecipes.com/wp-content/uploads/2025/04/Mixed-Berry-Cheesecake-_-A-baJillian-Recipes-10.jpg" alt="Cheesecake">
+                    <div class="menu-item-info">
+                        <h4>Berry Cheesecake</h4>
+                        <p>New York style with compote</p>
+                        <span class="item-price">₹280</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=200&h=200&fit=crop" alt="Tiramisu">
+                    <div class="menu-item-info">
+                        <h4>Classic Tiramisu</h4>
+                        <p>Espresso-soaked ladyfingers & mascarpone</p>
+                        <span class="item-price">₹320</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=200&h=200&fit=crop" alt="Ice Cream">
+                    <div class="menu-item-info">
+                        <h4>Sundae Deluxe</h4>
+                        <p>Three scoops with toppings & nuts</p>
+                        <span class="item-price">₹260</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h3><i class="fa-solid fa-mug-hot"></i> Beverages</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=200&h=200&fit=crop" alt="Coffee">
+                    <div class="menu-item-info">
+                        <h4>Espresso</h4>
+                        <p>Rich Italian roast</p>
+                        <span class="item-price">₹120</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.proportionalplate.com/wp-content/uploads/2024/04/Mint-LemonadeMay-07-2025-2.jpg" alt="Lemonade">
+                    <div class="menu-item-info">
+                        <h4>Mint Lemonade</h4>
+                        <p>Fresh & refreshing</p>
+                        <span class="item-price">₹150</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1558857563-b371033873b8?w=200&h=200&fit=crop" alt="Smoothie">
+                    <div class="menu-item-info">
+                        <h4>Mango Smoothie</h4>
+                        <p>Fresh mango blended with yogurt</p>
+                        <span class="item-price">₹180</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1497515114629-f71d768fd07c?w=200&h=200&fit=crop" alt="Cold Brew">
+                    <div class="menu-item-info">
+                        <h4>Cold Brew Coffee</h4>
+                        <p>Slow-steeped 12 hours</p>
+                        <span class="item-price">₹220</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&h=400&fit=crop" alt="Crave Cart Food Delivery">
+            </div>
+            <div class="about-text">
+                <h2>About Crave Cart</h2>
+                <p class="tagline"><i class="fas fa-heart" style="color: var(--red-accent);"></i> Where Every Craving Finds Its Way</p>
+                <p>Crave Cart is your go-to food delivery platform, bringing the best culinary experiences right to your doorstep. We connect food lovers with top-rated restaurants, ensuring every meal is delivered hot, fresh, and on time.</p>
+                <p>With a passion for good food and a commitment to excellence, we make ordering food simple, fast, and delightful. Whether you're craving a midnight snack or planning a family feast — we've got you covered.</p>
+                <div class="about-features-mini">
+                    <span><i class="fas fa-check-circle"></i> Fast Delivery</span>
+                    <span><i class="fas fa-check-circle"></i> Quality Food</span>
+                    <span><i class="fas fa-check-circle"></i> 24/7 Support</span>
+                    <span><i class="fas fa-check-circle"></i> Live Tracking</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section id="testimonials">
+        <div class="testimonials-header">
+            <span class="feature-eyebrow">Real Stories</span>
+            <h2 class="section-title">What Our Foodies Say</h2>
+            <p class="feature-sub">Join 50,000+ happy customers who order with us every week</p>
+        </div>
+
+        <div class="testimonials-grid">
+            <!-- Testimonial 1 -->
+            <div class="testimonial">
+                <div class="testimonial-top">
+                    <div class="testimonial-avatar">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=120&h=120&fit=crop" alt="Priya S.">
+                        <span class="verified-badge"><i class="fa-solid fa-check"></i></span>
+                    </div>
+                    <div class="testimonial-info">
+                        <strong>Priya Sharma</strong>
+                        <span>Mumbai · Regular Customer</span>
+                        <div class="testimonial-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="quote-mark"><i class="fa-solid fa-quote-right"></i></div>
+                </div>
+                <p>"The fastest delivery I've ever experienced. Food arrived hot and the packaging was premium. Crave Cart is now my go-to!"</p>
+                <div class="testimonial-footer">
+                    <span class="order-info"><i class="fa-solid fa-bag-shopping"></i> 47 orders</span>
+                    <span class="date-info"><i class="fa-regular fa-clock"></i> 2 days ago</span>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial">
+                <div class="testimonial-top">
+                    <div class="testimonial-avatar">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop" alt="Rahul M.">
+                        <span class="verified-badge"><i class="fa-solid fa-check"></i></span>
+                    </div>
+                    <div class="testimonial-info">
+                        <strong>Rahul Mehta</strong>
+                        <span>Bangalore · Food Blogger</span>
+                        <div class="testimonial-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="quote-mark"><i class="fa-solid fa-quote-right"></i></div>
+                </div>
+                <p>"Amazing variety of restaurants. I discovered three new favourites in one week! The app experience is super smooth."</p>
+                <div class="testimonial-footer">
+                    <span class="order-info"><i class="fa-solid fa-bag-shopping"></i> 128 orders</span>
+                    <span class="date-info"><i class="fa-regular fa-clock"></i> 1 week ago</span>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial">
+                <div class="testimonial-top">
+                    <div class="testimonial-avatar">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=120&h=120&fit=crop" alt="Anjali K.">
+                        <span class="verified-badge"><i class="fa-solid fa-check"></i></span>
+                    </div>
+                    <div class="testimonial-info">
+                        <strong>Anjali Kapoor</strong>
+                        <span>Delhi · Home Chef</span>
+                        <div class="testimonial-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                    <div class="quote-mark"><i class="fa-solid fa-quote-right"></i></div>
+                </div>
+                <p>"Ordered for a family dinner of 12 people. Everything arrived on time, hot, and beautifully packed. Highly recommend!"</p>
+                <div class="testimonial-footer">
+                    <span class="order-info"><i class="fa-solid fa-bag-shopping"></i> 32 orders</span>
+                    <span class="date-info"><i class="fa-regular fa-clock"></i> 3 days ago</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== APP DOWNLOAD ========== -->
+    <section id="app-download">
+        <div class="app-container">
+            <div class="app-text">
+                <span class="feature-eyebrow" style="background: rgba(255,255,255,0.2); color: #FFF8E7; border-color: #FFF8E7;">Get The App</span>
+                <h2>Order Faster on the <span>Crave Cart App</span></h2>
+                <p>Get exclusive app-only discounts, real-time order tracking, and personalised recommendations. Available on iOS and Android.</p>
+                <div class="app-buttons">
+                    <button class="app-btn"><i class="fa-brands fa-apple"></i> App Store</button>
+                    <button class="app-btn"><i class="fa-brands fa-google-play"></i> Google Play</button>
+                </div>
+            </div>
+            <div class="app-visual">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">We'd love to hear from you!</p>
+
+            <div class="form-wrapper">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="4" placeholder="Your Message..."></textarea>
+                    </div>
+                    <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-bottom">
+                <div class="contact-details">
+                    <div class="detail-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Address</strong>
+                            <p>123 Foodie Lane, Mumbai, Maharashtra 400001</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Phone</strong>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <p>info@cravecart.com</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Hours</strong>
+                            <p>Mon-Sat: 10am - 11pm<br>Sun: 11am - 9pm</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31381.691725013643!2d76.17386777431642!3d10.523376699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7efe7066293db%3A0xd37a72dd8a64d72a!2sThe%20Lillys!5e0!3m2!1sen!2sin!4v1782876224137!5m2!1sen!2sin" width="100%" height="250" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col footer-brand">
+                <div class="footer-logo">
+                    <i class="fa-solid fa-burger"></i>
+                    <h3>CRAVE CART</h3>
+                </div>
+                <p>Where every craving finds its way. Delivering happiness one meal at a time.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#feature">Menu</a></li>
+                    <li><a href="#specials">Specials</a></li>
+                    <li><a href="#how">How It Works</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Order Tracking</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Get In Touch</h4>
+                <ul class="footer-contact">
+                    <li><i class="fa-solid fa-location-dot"></i> 123 Foodie Lane, Mumbai</li>
+                    <li><i class="fa-solid fa-phone"></i> +91 98765 43210</li>
+                    <li><i class="fa-solid fa-envelope"></i> info@cravecart.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Crave Cart. All rights reserved. Made with <i class="fa-solid fa-heart"></i> for foodies.</p>
+        </div>
+    </footer>
+
+    <!-- ========== GSAP ANIMATIONS ========== -->
+    <script>
+        window.addEventListener("load", function () {
+            gsap.registerPlugin(ScrollTrigger);
+
+            /* ---------- Load animations ---------- */
+            gsap.from("header", { opacity: 0, y: -40, duration: 1, ease: "power3.out" });
+            gsap.from("#navbar", { opacity: 0, y: -20, duration: 0.8, delay: 0.2, ease: "power3.out" });
+
+            /* ---------- Hero ---------- */
+            gsap.from(".hero-tag", { opacity: 0, y: -20, duration: 0.7, delay: 0.4, ease: "power2.out" });
+            gsap.from(".hero-content h1", { opacity: 0, y: 40, duration: 1, delay: 0.55, ease: "power3.out" });
+            gsap.from(".hero-content p", { opacity: 0, y: 30, duration: 0.9, delay: 0.75, ease: "power3.out" });
+            gsap.from(".hero-buttons button", { opacity: 0, y: 20, duration: 0.7, delay: 0.95, stagger: 0.15, ease: "back.out(1.2)" });
+            gsap.from(".hero-stats .stat", { opacity: 0, y: 20, duration: 0.6, delay: 1.15, stagger: 0.12, ease: "power2.out" });
+
+            /* ---------- Stats strip ---------- */
+            gsap.from(".stat-box", {
+                scrollTrigger: { trigger: "#stats-strip", start: "top 85%" },
+                opacity: 0, y: 40, duration: 0.7, stagger: 0.15, ease: "back.out(1)"
+            });
+
+            /* ---------- Section titles ---------- */
+            gsap.utils.toArray('.section-title').forEach(title => {
+                gsap.from(title, {
+                    scrollTrigger: { trigger: title, start: "top 85%" },
+                    opacity: 0, y: 30, duration: 0.8, ease: "back.out(0.8)"
+                });
+            });
+
+            /* ---------- Feature cards ---------- */
+            gsap.from(".col", {
+                scrollTrigger: { trigger: "#feature .row", start: "top 80%" },
+                opacity: 0, y: 70, rotateX: -12, scale: 0.94,
+                duration: 0.9, stagger: 0.15, ease: "back.out(0.8)", transformOrigin: "center bottom"
+            });
+
+            gsap.from(".badge", {
+                scrollTrigger: { trigger: "#feature .row", start: "top 70%" },
+                scale: 0, rotate: -30, duration: 0.5, delay: 0.6, stagger: 0.12, ease: "back.out(2)"
+            });
+
+            gsap.to(".feature-eyebrow", { y: -4, duration: 1.6, repeat: -1, yoyo: true, ease: "sine.inOut" });
+
+            /* ---------- Specials ---------- */
+            gsap.from(".special-card", {
+                scrollTrigger: { trigger: "#specials", start: "top 80%" },
+                opacity: 0, y: 60, duration: 0.8, stagger: 0.18, ease: "power3.out"
+            });
+
+            /* ============================================================
+               HOW IT WORKS — new animation
+               ============================================================ */
+            const howCards = gsap.utils.toArray(".how-card");
+
+            // Progress bar grows as user scrolls through the section
+            gsap.to(".timeline-progress", {
+                scrollTrigger: {
+                    trigger: ".how-timeline",
+                    start: "top 75%",
+                    end: "bottom 60%",
+                    scrub: 1
+                },
+                width: "100%",
+                ease: "none"
+            });
+
+            // Cards pop in one by one
+            howCards.forEach((card, i) => {
+                gsap.from(card, {
+                    scrollTrigger: {
+                        trigger: card,
+                        start: "top 88%",
+                        toggleActions: "play none none none"
+                    },
+                    opacity: 0,
+                    y: 80,
+                    rotateY: 25,
+                    scale: 0.9,
+                    duration: 0.9,
+                    delay: i * 0.15,
+                    ease: "back.out(1.2)",
+                    transformOrigin: "left center"
+                });
+
+                // Step bubble spins in
+                const bubble = card.querySelector(".step-bubble");
+                gsap.from(bubble, {
+                    scrollTrigger: {
+                        trigger: card,
+                        start: "top 80%"
+                    },
+                    scale: 0,
+                    rotate: -180,
+                    duration: 0.8,
+                    delay: i * 0.15 + 0.3,
+                    ease: "back.out(2)"
+                });
+            });
+
+            /* ============================================================
+               TESTIMONIALS — new animation
+               ============================================================ */
+            const testimonials = gsap.utils.toArray(".testimonial");
+
+            testimonials.forEach((card, i) => {
+                // Card entrance
+                gsap.from(card, {
+                    scrollTrigger: {
+                        trigger: card,
+                        start: "top 85%",
+                        toggleActions: "play none none none"
+                    },
+                    opacity: 0,
+                    y: 60,
+                    scale: 0.95,
+                    duration: 0.9,
+                    delay: i * 0.15,
+                    ease: "power3.out"
+                });
+
+                // Avatar pop
+                const avatar = card.querySelector(".testimonial-avatar");
+                gsap.from(avatar, {
+                    scrollTrigger: {
+                        trigger: card,
+                        start: "top 80%"
+                    },
+                    scale: 0,
+                    rotate: -90,
+                    duration: 0.7,
+                    delay: i * 0.15 + 0.3,
+                    ease: "back.out(2)"
+                });
+
+                // Stars stagger
+                const stars = card.querySelectorAll(".testimonial-stars i");
+                gsap.from(stars, {
+                    scrollTrigger: {
+                        trigger: card,
+                        start: "top 80%"
+                    },
+                    opacity: 0,
+                    scale: 0,
+                    duration: 0.3,
+                    delay: i * 0.15 + 0.5,
+                    stagger: 0.07,
+                    ease: "back.out(2.5)"
+                });
+
+                // Quote mark float
+                gsap.to(card.querySelector(".quote-mark"), {
+                    y: -6,
+                    duration: 2 + i * 0.3,
+                    repeat: -1,
+                    yoyo: true,
+                    ease: "sine.inOut"
+                });
+            });
+
+            /* ---------- Menu items ---------- */
+            gsap.utils.toArray('.menu-item').forEach((item, i) => {
+                gsap.from(item, {
+                    scrollTrigger: { trigger: item, start: "top 90%" },
+                    opacity: 0, y: 20, scale: 0.98, duration: 0.5, delay: i * 0.05, ease: "power1.out"
+                });
+            });
+
+            /* ---------- About ---------- */
+            gsap.from(".about-image", {
+                scrollTrigger: { trigger: "#about", start: "top 75%" },
+                opacity: 0, x: -60, duration: 0.9, ease: "power3.out"
+            });
+            gsap.from(".about-text", {
+                scrollTrigger: { trigger: "#about", start: "top 75%" },
+                opacity: 0, x: 60, duration: 0.9, delay: 0.1, ease: "power3.out"
+            });
+
+            /* ---------- App download ---------- */
+            gsap.from(".app-text", {
+                scrollTrigger: { trigger: "#app-download", start: "top 80%" },
+                opacity: 0, x: -50, duration: 0.8, ease: "power3.out"
+            });
+            gsap.from(".app-visual", {
+                scrollTrigger: { trigger: "#app-download", start: "top 80%" },
+                opacity: 0, x: 50, duration: 0.8, delay: 0.1, ease: "power3.out"
+            });
+
+            /* ---------- Contact ---------- */
+            gsap.from(".form-wrapper", {
+                scrollTrigger: { trigger: "#contact", start: "top 80%" },
+                opacity: 0, y: 40, duration: 0.8, ease: "power2.out"
+            });
+            gsap.from(".contact-bottom > *", {
+                scrollTrigger: { trigger: ".contact-bottom", start: "top 85%" },
+                opacity: 0, y: 30, duration: 0.7, stagger: 0.15, ease: "power2.out"
+            });
+
+            /* ---------- Footer ---------- */
+            gsap.from(".footer-col", {
+                scrollTrigger: { trigger: "footer", start: "top 90%" },
+                opacity: 0, y: 30, duration: 0.6, stagger: 0.12, ease: "power2.out"
+            });
+
+            /* ---------- Continuous ---------- */
+            gsap.to(".header-burger", { y: 8, duration: 2, repeat: -1, yoyo: true, ease: "sine.inOut" });
+            gsap.to("nav button", { scale: 1.02, duration: 1.5, repeat: -1, yoyo: true, ease: "sine.inOut" });
+            gsap.to(".app-visual i", { y: -12, duration: 2.2, repeat: -1, yoyo: true, ease: "sine.inOut" });
+        });
+    </script>
+</body>
+</html>
